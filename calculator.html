@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(141, 154, 154);
+        }
+    .calculator{
+        background-color: rgb(150, 236, 232);
+        width: 300px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        border-radius: 20px;
+        gap: 3px;
+        box-shadow: 10px 10px 15px rgb(106, 201, 230);
+        margin-left: 400px;
+    }
+    .one{
+        background-color: rgb(169, 252, 131);
+        width: 50px;
+        height: 40px;
+        margin: 7px;
+        border-radius: 10px;
+        font-size: larger;
+    }
+    #screen{
+        width: 240px;
+        height: 50px;
+        margin-top: -50px;
+        border-radius: 5px;
+        font-size: x-large;
+        background-color: rgb(208, 243, 126);
+    }
+    .two{
+        background-color:rgb(169, 252, 131);
+        width: 50px;
+        height: 40px;
+        margin: 7px;
+        border-radius: 10px;
+        font-size: larger;
+    }
+    .three{
+        background-color: rgb(169, 252, 131);
+        width: 50px;
+        height:40px;
+        margin: 7px;
+        border-radius: 10px;
+        font-size: larger;
+    }
+    h1{
+        position: relative;
+        top: -20px;
+        color: rgb(236, 162, 218);
+        z-index: 1;
+    }
+    :hover{
+        cursor:  pointer;
+        color: rgb(89, 175, 128);
+    }
+   
+</style>
+</head>
+<body>
+    
+
+   
+    
+    <div class="calculator">
+        <h1>Calculator</h1>
+        <input id="screen" value="">
+    <button class="three" onclick="clea()">C</button>
+    <button class="three" onclick="clea('OFF')">OFF</button>
+    <button class="three" onclick="del('Del')">Del</button>
+    <button class="two" onclick="display('%')">%</button>
+    <button class="one" onclick="display('7')">7</button>
+    <button class="one" onclick="display('8')">8</button>
+    <button class="one" onclick="display('9')">9</button>
+    <button class="two" onclick="display('*')">*</button>
+    <button class="one" onclick="display('4')">4</button>
+    <button class="one" onclick="display('5')">5</button>
+    <button class="one" onclick="display('6')">6</button>
+    <button class="two" onclick="display('-')">-</button>
+    <button class="one" onclick="display('1')">1</button>
+    <button class="one" onclick="display('2')">2</button>
+    <button class="one" onclick="display('3')">3</button>
+    <button class="two" onclick="display('+')">+</button>
+    <button class="one" onclick="display('0')">0</button>
+    <button class="two" onclick="result('=')">=</button>
+    <button class="two" onclick="display('/')">/</button>
+    <button class="two" onclick="display('.')">.</button>
+</div>
+<script src="java.js"></script>
+
+</body>
+</html>
